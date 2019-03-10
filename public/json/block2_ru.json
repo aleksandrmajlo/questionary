@@ -1,0 +1,280 @@
+{
+
+
+
+
+  "block11": {
+    "title": "Как можно быстрее решите следующие примеры",
+    "error": "Ответьте на все вопросы что бы перейти к следующему заданию",
+    "type": "example",
+    "val": "",
+    "change": false,
+    "timer":0,
+    "items": [
+
+      {
+        "zadan":"8+23=",
+        "result": "31",
+        "answer":"",
+        "bol":false
+      },
+
+      {
+        "zadan":"60+68=",
+        "result": "128",
+        "answer":"",
+        "bol":false
+      },
+
+      {
+        "zadan":" 4+54=",
+        "result": "58",
+        "answer":"",
+        "bol":false
+      },
+
+      {
+        "zadan":" 93–59=",
+        "result": "34",
+        "answer":"",
+        "bol":false
+      },
+
+      {
+        "zadan":"25+19=",
+        "result": "44",
+        "answer":"",
+        "bol":false
+      },
+
+
+      {
+        "zadan":" 78÷3=",
+        "result": "26",
+        "answer":"",
+        "bol":false
+      },
+
+      {
+        "zadan":"98–62=",
+        "result": "36",
+        "answer":"",
+        "bol":false
+      },
+
+      {
+        "zadan":"84+12=",
+        "result": "96",
+        "answer":"",
+        "bol":false
+      },
+
+      {
+        "zadan":"30÷2=",
+        "result": "15",
+        "answer":"",
+        "bol":false
+      },
+
+      {
+        "zadan":"95-51=",
+        "result": "44",
+        "answer":"",
+        "bol":false
+      },
+
+
+
+      {
+        "zadan":" 84+14=",
+        "result": "98",
+        "answer":"",
+        "bol":false
+      },
+
+      {
+        "zadan":" 94–44=",
+        "result": "50",
+        "answer":"",
+        "bol":false
+      },
+
+      {
+        "zadan":"72÷4=",
+        "result": "18",
+        "answer":"",
+        "bol":false
+      },
+
+      {
+        "zadan":"28+43=",
+        "result": "112",
+        "answer":"",
+        "bol":false
+      },
+
+      {
+        "zadan":" 98–94=",
+        "result": "4",
+        "answer":"",
+        "bol":false
+      },
+
+      {
+        "zadan":"59+90= ",
+        "result": "149",
+        "answer":"",
+        "bol":false
+      },
+
+      {
+        "zadan":"52+99= ",
+        "result": "151",
+        "answer":"",
+        "bol":false
+      },
+
+      {
+        "zadan":"40÷8=",
+        "result": "5",
+        "answer":"",
+        "bol":false
+      },
+
+      {
+        "zadan":"9-81=",
+        "result": "?",
+        "answer":"",
+        "bol":false
+      },
+      {
+        "zadan":"26÷13=",
+        "result": "2",
+        "answer":"",
+        "bol":false
+      }
+
+
+    ]
+  },
+
+
+  "block12": {
+    "title": "Запомните форму и цвет геометрических фигур на изображении. У Вас на это 30 секунд",
+    "title2": "Отметье те фигуры, которые были изображены ранее",
+    "type": "guess_figures",
+    "change": false,
+    "coutdown":30,
+
+    "items": [
+      "http://brain.art-plus-test.ru/questionary/photo/SNAG-0028.png",
+      "http://brain.art-plus-test.ru/questionary/photo/SNAG-0029.png",
+      "http://brain.art-plus-test.ru/questionary/photo/SNAG-0030.png",
+      "http://brain.art-plus-test.ru/questionary/photo/SNAG-0031.png"
+    ],
+    "results":[
+
+      {
+        "photo":"http://brain.art-plus-test.ru/questionary/photo/1.jpg",
+        "bol":false,
+        "title":"Красный прямоугольник"
+      },
+
+      {
+        "photo":"http://brain.art-plus-test.ru/questionary/photo/2.jpg",
+        "bol":false,
+        "title":"Красный круг"
+      },
+      {
+        "photo":"http://brain.art-plus-test.ru/questionary/photo/3.jpg",
+        "bol":false,
+        "title":"Зеленный овал"
+      },
+      {
+        "photo":"http://brain.art-plus-test.ru/questionary/photo/4.jpg",
+        "bol":false,
+        "title":"Синий квадрат"
+      },
+      {
+        "photo":"http://brain.art-plus-test.ru/questionary/photo/5.jpg",
+        "bol":false,
+        "title":"Желтый трехугольник"
+      },
+      {
+        "photo":"http://brain.art-plus-test.ru/questionary/photo/6.jpg",
+        "bol":false,
+        "title":"Розовый ромб"
+      }
+
+
+    ]
+
+  },
+
+
+  "block13": {
+    "title":"Запомните эти  слова. У Вас на это 3 минуты",
+    "title2":"Напишите все запомнившиеся слова в любом порядке",
+    "type": "word",
+    "val": "",
+    "change": false,
+    "timer":0,
+    "coutdown":180,
+    "items":[
+      "ночь",
+      "точка",
+      "отдых",
+      "груша",
+      "отдел",
+      "отец",
+      "сестра",
+      "минута",
+      "секунда",
+      "кружка",
+      "дядя",
+      "лавка",
+      "линейка",
+      "нора",
+      "счет",
+      "кран",
+      "день",
+      "яблоко",
+      "мать",
+      "труба",
+      "угол",
+      "папка",
+      "рассказ",
+      "музыка",
+      "сироп",
+      "брат",
+      "дочь",
+      "час",
+      "магазин",
+      "кровать"
+    ]
+
+  },
+
+  "block14": {
+    "title":"Сколько слов написано, у которых цвет соответствует содержанию слова? Напишите ответ",
+    "type": "wordcolor",
+    "val": "",
+    "change": false,
+    "timer":0,
+    "photo":"http://brain.art-plus-test.ru/questionary/photo/wordcolor.png"
+  },
+
+
+
+  "block15": {
+    "title":"Какое изображение Вы увидели на этой картинке? Напишите ответ",
+    "type": "wordphoto",
+    "val": "",
+    "change": false,
+    "timer":0,
+    "photo":"http://brain.art-plus-test.ru/questionary/photo/wordphoto.jpg"
+  }
+
+
+
+}
