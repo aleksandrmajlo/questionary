@@ -1,63 +1,53 @@
 <template>
   <div id="app">
-     <div class="container">
+      <transition name="fade" mode="out-in">
+         <div class="container" key="start" v-if="!startTest">
+         <div class="col-lg-12 m-b-40 text-center">
+             <a href="#" @click.prevent="startTest=true" class="btn btn-primary btn-lg">{{this.$store.state.langune.start}}</a>
+         </div>
+     </div>
+         <div class="container" key="work" v-else>
          <div class="row">
-
              <div class="col-lg-12 m-b-40">
                  <Progress/>
              </div>
-
              <!-- блок 1 заданий -->
              <div v-if="$store.state.activeAnswer" class="col-lg-12 m-b-40" >
                  <block1/>
              </div>
-
              <!-- блок 2 заданий -->
              <div  v-if="$store.state.activeAnswerBlock2" class="col-lg-12 m-b-40">
                  <block2></block2>
              </div>
-
              <div class="col-lg-12">
                  <div class="row">
-
                      <div class="col-lg-6 text-center">
                          <Prev/>
                      </div>
                      <div class="col-lg-6 text-center"  v-show="$store.state.next">
                          <Next/>
                      </div>
-
                      <!--переход к заданиям -->
                      <div class="col-lg-6 text-center"  v-show="$store.state.setnext2">
                          <NextStepBlock2/>
                      </div>
-
                      <div class="col-lg-6 text-center"  v-if="$store.state.next2">
                          <Next2/>
                      </div>
-
                      <div class="col-lg-6 text-center"  v-if="$store.state.showFormButton">
                          <showFormButton/>
                      </div>
-
-
                  </div>
-
                  <div class="row justify-content-center"  v-if="$store.state.showForm">
                      <div class="col-lg-6" >
                          <Form/>
                      </div>
                  </div>
-
-
-
-
-
              </div>
-
 
          </div>
      </div>
+      </transition>
   </div>
 </template>
 
@@ -73,6 +63,11 @@ import showFormButton from "./components/showFormButton";
 import Form from "./components/Form";
 export default {
   name: 'app',
+  data(){
+        return {
+            startTest:false
+        }
+  },
   components: {
       Next,
       Prev,
@@ -89,7 +84,10 @@ export default {
      this.$store.dispatch('getLang');
      this.$store.dispatch('getBlock1');
      this.$store.dispatch('getBlock2');
-  }
+  },
+   methods:{
+     
+   }
 }
 </script>
 
@@ -224,4 +222,13 @@ export default {
     }
 
 }
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 0.7s ease-out;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
 </style>

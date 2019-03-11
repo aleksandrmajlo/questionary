@@ -27,7 +27,6 @@
                     <div v-else-if="item.type === 'textarea'" class="form-group">
                         <label class="strong">
                             {{item.title}}
-                            <!--<span class="req" v-show="item.req">*</span>-->
                         </label>
                         <textarea @input="setValText($event)"
                                   :name="$store.state.activeAnswer"
@@ -40,7 +39,6 @@
                     <div v-else-if="item.type === 'checkbox'" class="form-group">
                         <label class="strong">
                             {{item.title}}
-                            <!--<span class="req" v-show="item.req">*</span>-->
                         </label>
                         <template v-if="item.items">
                             <div class="radio_block">
@@ -60,7 +58,6 @@
                     <div v-else-if="item.type === 'radio'" class="form-group">
                         <label class="strong">
                             {{item.title}}
-                            <!--<span class="req" v-show="item.req">*</span>-->
                         </label>
                         <template v-if="item.items">
                             <div class="radio_block">
@@ -84,7 +81,7 @@
                                                :checked="Array.isArray(item.val)&&item.val.indexOf('Нет')!==-1"
                                                @input="setValYesNot($event)" :name="$store.state.activeAnswer"
                                                :id="$store.state.activeAnswer+'2'" value="Нет">
-                                        <label class="form-check-label" :for="$store.state.activeAnswer+'2'">Нет</label>
+                                        <label class="form-check-label" :for="$store.state.activeAnswer+'2'">{{this.$store.state.langune.not}}</label>
                                     </div>
                                 </div>
 
@@ -94,7 +91,7 @@
                                                @input="setValYesNot($event)"
                                                :checked="Array.isArray(item.val)&&item.val.indexOf('Да')!==-1"
                                                :name="$store.state.activeAnswer" :id="$store.state.activeAnswer+'1'" value="Да">
-                                        <label class="form-check-label" :for="$store.state.activeAnswer+'1'">Да</label>
+                                        <label class="form-check-label" :for="$store.state.activeAnswer+'1'">{{this.$store.state.langune.yes}}</label>
                                     </div>
                                 </div>
 
@@ -132,8 +129,3 @@
         },
     }
 </script>
-
-<style scoped lang="scss">
-
-
-</style>
