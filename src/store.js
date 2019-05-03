@@ -20,7 +20,8 @@ export default new Vuex.Store({
 
         next: false,//кнопка перехода на следующий шаг
 
-        setnext2: false, //кнопка перехода на блок2,
+        setnext2: false, //кнопка перехода на блок2,!!!!!!!!!!!!!!!
+        // setnext2: true, //кнопка перехода на блок2,
         next2: false, //кнопка перехода на блок2,
         showFormButton: false,//показать форму кнопка
 
